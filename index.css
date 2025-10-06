@@ -1,0 +1,263 @@
+/* 🌈 General */
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Arial Rounded MT Bold', Arial, sans-serif;
+  text-align: center;
+  color: white;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  overflow-x: hidden;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🌟 Header */
+header {
+  padding: 50px 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 0 0 40px 40px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.logo {
+  width: 220px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+
+.logo:hover {
+  transform: rotate(-5deg) scale(1.05);
+}
+
+header h1 {
+  font-size: 3em;
+  letter-spacing: 2px;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.3em;
+  opacity: 0.9;
+}
+
+/* ✨ Sección info */
+/* ✨ Sección info (mejorada, más legible y llamativa) */
+.info {
+  padding: 80px 30px;
+  max-width: 1000px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.info h2 {
+  font-size: 2.6em;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.info p {
+  max-width: 850px;
+  margin: auto;
+  font-size: 1.4em;
+  line-height: 1.9;
+  color: #fff;
+  opacity: 0.95;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+
+/* 📱 Ajuste responsive */
+@media (max-width: 768px) {
+  .info {
+    padding: 50px 20px;
+  }
+
+  .info h2 {
+    font-size: 2em;
+  }
+
+  .info p {
+    font-size: 1.2em;
+  }
+}
+
+/* 💎 Beneficios */
+.benefits {
+  padding: 60px 20px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 40px;
+  margin: 50px auto;
+  max-width: 1200px;
+  backdrop-filter: blur(8px);
+}
+
+.benefits h2 {
+  font-size: 2.3em;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255,255,255,0.25);
+  padding: 25px;
+  border-radius: 20px;
+  width: 280px;
+  min-height: 220px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* 🎨 Botones */
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  margin: 25px 15px;
+  background: #8e2de2;
+  background: linear-gradient(45deg, #8e2de2, #c45ff7);
+  color: white;
+  text-decoration: none;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+/* 📸 Galería */
+.gallery {
+  padding: 60px 20px;
+}
+
+.gallery h2 {
+  font-size: 2.3em;
+  margin-bottom: 25px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.gallery-grid img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* 📱 Social */
+.social {
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  margin: 60px auto;
+  max-width: 900px;
+}
+
+.social h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* 🦶 Footer */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background: rgba(0,0,0,0.35);
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* 📱 Responsividad */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  header p {
+    font-size: 1.1em;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .info p {
+    font-size: 1.1em;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-sample {
+    width: 90%;
+  }
+}
+
+
+
+
+
